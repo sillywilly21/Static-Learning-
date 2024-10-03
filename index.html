@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kegans Website</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  </head>
+  <body>
+    <!-- Home Sectin -->
+    <section id="header">
+      <!-- container div so that we can give some space from left and right side by applying margin-->
+      <div class="container">
+        <img src="images/logo.PNG" class="logo" alt="" />
+        <div class="header-text">
+          <h1>
+            im still<br />
+            learning
+            <br />
+          </h1>
+         
+          <p>
+            Ive made a couple websites before but I think this is my favorite.
+          </p>
+          <br />
+         
+        </div>
+      </div>
+    </section>
+
+    <nav id="sideNav">
+      <ul>
+        <li><a href="#header">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#features">HOW</a></li>
+      </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn" alt="" />
+
+    <!-- ABOUT SECTION  -->
+    <secton id="about">
+      <div class="about-left-col">
+        <img src="images/about.PNG" alt="" />
+      </div>
+      <div class="about-right-col">
+        <div class="about-text">
+          <h1>About This Site</h1>
+          <p>
+            I made this site or the boba drop but Im really starting to like working on it.
+          </p>
+          <br />
+          <h2>
+            "Learning is not attained by chance, it must be sought for with
+            ardor and attended to with diligence"
+          </h2>
+          <h3>----Abigial Adams</h3>
+        </div>
+      </div>
+    </secton>
+
+    <!-- FEATURES SECTION  -->
+    <section id="features">
+      <div class="feature-row">
+        <div class="feature-col">
+          
+          <h4>School Ipad</h4>
+          <p>I coded this entire website with my school ipad.</p>
+        </div>
+        <div class="feature-col">
+          
+          <h4>Learning Process</h4>
+          <p>I learned alot of html and css from youtube.</p>
+        </div>
+        <div class="feature-col">
+          
+          <h4>Hosting</h4>
+          <p>
+            The hardest part of learning to make a website like this, was hosting it on github pages, lol.
+          </p>
+        </div>
+      </div>
+
+    
+
+    <!-- COURSES SECTION  -->
+    <section id="courses">
+      <div class="container course-row">
+        <div class="course-left-col">
+          <div class="course-text">
+            <h1>
+              Why Did I <br />
+              Make this?
+            </h1>
+          
+            <p>
+             I really wanted to learn more Html and Css And i thought this website would be a perfect opurtunity!
+            </p>
+          </div>
+        </div>
+        <div class="course-right-col">
+          <img src="images/course.JPG" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var sideNav = document.getElementById("sideNav");
+
+      sideNav.style.right = "-250px";
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0px";
+        } else {
+          sideNav.style.right = "-250px";
+        }
+      };
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+      });
+    </script>
+  </body>
+</html>
